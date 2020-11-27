@@ -43,7 +43,7 @@ ReactDOM.render(
     {/* Fim rota Produtos */}
 
     {/* Rota Nossas Lojas */}
-    <Route exact path="/lojas.js">
+    <Route exact path="/lojas.php">
     <Menu />
     <Lojas />
     <Footer />
@@ -51,7 +51,7 @@ ReactDOM.render(
     {/* Fim rota Nossas Lojas */}
 
     {/* Rota Contatos */}
-    <Route exact path="/contato.js">
+    <Route exact path="/contato.php">
     <Menu />
     <Contatos />
     <FormContatos />
