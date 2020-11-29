@@ -2,6 +2,7 @@ import '../../estilos/estilos.css'
 import Whatsapp from '../../imagens/whatsapp_icon.png.png'
 import Email from '../../imagens/email.png.png'
 
+
 export default function Contatos() {
     return (
         <div>

@@ -10,7 +10,7 @@ import Categorias from '../src/Components/Produtos/categorias'
 import ListaProdutos from '../src/Components/Produtos/produtos'
 import FormContatos from '../src/Components/Contatos/formContatos'
 
-import{BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import{BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 ReactDOM.render(

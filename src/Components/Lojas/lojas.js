@@ -5,12 +5,12 @@ export default function Lojas() {
         <div>
             <main>
                 <header>
-                    <h2 class="display-4">Nossas Lojas</h2>
+                    <h2 className="display-4">Nossas Lojas</h2>
                 </header>
                 <hr />
-                    <div class="row">
-                        <div class="container_lojas">
-                            <div class="lojas">
+                    <div className="row">
+                        <div className="container_lojas">
+                            <div className="lojas">
                                 <h3>Rio de Janeiro</h3>
                                 <p>Avenida Presidente Vargas, 5000</p>
                                 <p>10 &ordm; andar</p>
@@ -18,7 +18,7 @@ export default function Lojas() {
                                 <p>(21) 3333-3333</p>
                             </div>
 
-                            <div class="lojas">
+                            <div className="lojas">
                                 <h3>São Paulo</h3>
                                 <p>Avenida Paulista, 985</p>
                                 <p>3 &ordm; andar</p>
@@ -26,7 +26,7 @@ export default function Lojas() {
                                 <p>(11) 4444-4444</p>
                             </div>
 
-                            <div class="lojas">
+                            <div className="lojas">
                                 <h3>Santa Catarina</h3>
                                 <p>Rua Major Ávila, 370</p>
                                 <p>Vila Mariana</p>
