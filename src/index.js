@@ -9,6 +9,7 @@ import Contatos from '../src/Components/Contatos/contatos'
 import Categorias from '../src/Components/Produtos/categorias'
 import ListaProdutos from '../src/Components/Produtos/produtos'
 import FormContatos from '../src/Components/Contatos/formContatos'
+import Comentarios from '../src/Components/Contatos/comentarios'
 
 import{BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -55,6 +56,7 @@ ReactDOM.render(
     <Menu />
     <Contatos />
     <FormContatos />
+    <Comentarios />
     <Footer />
     </Route>
     {/* Fim rota Contatos */}
