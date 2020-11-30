@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Nov-2020 às 02:25
+-- Tempo de geração: 30-Nov-2020 às 17:34
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.2.34
 
@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `fseletro`
 --
-  CREATE DATABASE `fseletro`;
+CREATE DATABASE `fseletro`;
+
 -- --------------------------------------------------------
 
 --
@@ -42,7 +43,8 @@ INSERT INTO `comentarios` (`id`, `data`, `nome`, `msg`) VALUES
 (5, '2020-10-28 02:29:28', 'Edik Carlos', 'Parabéns'),
 (6, '2020-10-30 19:11:19', 'Helena', 'Preços muito bons!'),
 (7, '2020-11-02 15:16:58', 'Jamal', 'Ótimo atendimento, preços dentro do mercado!'),
-(8, '2020-11-02 15:18:48', 'Toninho', 'Ótimo atendimento, porém deviam ter uma entrega mais rápida, fiquei a manhã toda em casa e foram entregar após o horário combinado!');
+(8, '2020-11-02 15:18:48', 'Toninho', 'Ótimo atendimento, porém deviam ter uma entrega mais rápida, fiquei a manhã toda em casa e foram entregar após o horário combinado!'),
+(9, '2020-11-29 18:50:47', 'Mariana Freitas', 'Amei o site de vocês, ele é feito em React né?');
 
 -- --------------------------------------------------------
 
@@ -155,18 +157,18 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`idproduto`, `categoria`, `descricao`, `imagem`, `precoinicial`, `precofinal`) VALUES
-(1, 'geladeira', 'Geladeira Frost Free Brastemp Side Inverse 540 litros', 'imagens/produtos/gel_brastemp_side.jpeg', 6389, 6389),
-(2, 'geladeira', 'Geladeira Frost Free Brastemp Branca 375 litros', 'imagens/produtos/gel_brastemp_frost.jpeg', 2867, 1919),
-(3, 'geladeira', 'Geladeira Frost Free Consul Prata 340 litros', 'imagens/produtos/gel_consul_prata.jpeg', 3329, 2510),
-(4, 'fogao', 'Fogão 4 Bocas Consul Inox com Mesa de Vidro', 'imagens/produtos/fog_consul_inox.jpeg', 1399, 1099),
-(5, 'fogao', 'Fogão de Piso 4 Bocas Monaco com Acendimento Automatico', 'imagens/produtos/fog_atlas_monaco.jpeg', 789, 519),
-(6, 'microondas', 'Micro-ondas Consul 32 Litros Inox 220v', 'imagens/produtos/micro_consul_inox.jpeg', 2400.2, 1719.9),
-(7, 'microondas', 'Micro-ondas 25 Litros Espelhado Philco 220v', 'imagens/produtos/micro_philco_espelhado.jpeg', 1500, 1000),
-(8, 'microondas', 'Micro-ondas Eletrolux 20L Branco', 'imagens/produtos/micro_eletrolux_bco.jpeg', 689, 510),
-(9, 'lavaroupas', 'Lavadora de Roupas Brastemp 11Kg com Turbo Perfomance Branca', 'imagens/produtos/lavadora_brastemp.jpeg', 1800, 1250),
-(10, 'lavaroupas', 'Lavadora de Roupas Philco Inverter 12Kg', 'imagens/produtos/lavadora_philco_inverter.jpeg', 2350, 1999),
-(11, 'lavaloucas', 'Lava-Louça Eletrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch', 'imagens/produtos/lava_louca_eletrolux.jpeg', 3489, 2799),
-(12, 'lavaloucas', 'Lava-Louças Compacta 8 Serviços Branca 127v Brastemp', 'imagens/produtos/lava_louca_brastemp.jpeg', 1689, 1040);
+(1, 'geladeira', 'Geladeira Frost Free Brastemp Side Inverse 540 litros', './produtos/gel_brastemp_side.jpeg', 6389, 6389),
+(2, 'geladeira', 'Geladeira Frost Free Brastemp Branca 375 litros', './produtos/gel_brastemp_frost.jpeg', 2867, 1919),
+(3, 'geladeira', 'Geladeira Frost Free Consul Prata 340 litros', './produtos/gel_consul_prata.jpeg', 3329, 2510),
+(4, 'fogao', 'Fogão 4 Bocas Consul Inox com Mesa de Vidro', './produtos/fog_consul_inox.jpeg', 1399, 1099),
+(5, 'fogao', 'Fogão de Piso 4 Bocas Monaco com Acendimento Automatico', './produtos/fog_atlas_monaco.jpeg', 789, 519),
+(6, 'microondas', 'Micro-ondas Consul 32 Litros Inox 220v', './produtos/micro_consul_inox.jpeg', 2400.2, 1719.9),
+(7, 'microondas', 'Micro-ondas 25 Litros Espelhado Philco 220v', './produtos/micro_philco_espelhado.jpeg', 1500, 1000),
+(8, 'microondas', 'Micro-ondas Eletrolux 20L Branco', './produtos/micro_eletrolux_bco.jpeg', 689, 510),
+(9, 'lavaroupas', 'Lavadora de Roupas Brastemp 11Kg com Turbo Perfomance Branca', './produtos/lavadora_brastemp.jpeg', 1800, 1250),
+(10, 'lavaroupas', 'Lavadora de Roupas Philco Inverter 12Kg', './produtos/lavadora_philco_inverter.jpeg', 2350, 1999),
+(11, 'lavaloucas', 'Lava-Louça Eletrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch', './produtos/lava_louca_eletrolux.jpeg', 3489, 2799),
+(12, 'lavaloucas', 'Lava-Louças Compacta 8 Serviços Branca 127v Brastemp', './produtos/lava_louca_brastemp.jpeg', 1689, 1040);
 
 --
 -- Índices para tabelas despejadas
@@ -211,7 +213,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `comentarios`
 --
 ALTER TABLE `comentarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `cores`
