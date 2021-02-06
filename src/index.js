@@ -11,7 +11,10 @@ import ListaProdutos from '../src/Components/Produtos/produtos'
 import FormContatos from '../src/Components/Contatos/formContatos'
 import Comentarios from '../src/Components/Contatos/comentarios'
 
+
 import{BrowserRouter as Router, Route} from 'react-router-dom';
+// import Comentarios from './Components/Contatos/comentarios';
+
 
 
 ReactDOM.render(

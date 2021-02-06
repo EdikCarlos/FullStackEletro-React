@@ -8,9 +8,10 @@ const ListaProdutos = () => {
 
     useEffect(async () => {
         const url = "http://localhost/www/FullStackEletro_BootstrapAtt/getContent.php?table=produtos";
+        // const url = "http://localhost:3333/produtos";
         const res = await fetch(url);
         setProds(await res.json());
-    }, [])
+    },[])
 
     let Zoom = (imagem) => {
         if(imagem.target.style.width === '120px')
